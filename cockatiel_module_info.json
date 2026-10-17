@@ -1,0 +1,64 @@
+{
+  "authority": 0,
+  "autostart": true,
+  "binary": {
+    "linux": {
+      "aarch64": "target/release/cockatiel_range",
+      "arm": "target/release/cockatiel_range",
+      "x86_64": "target/release/cockatiel_range"
+    },
+    "macos": {
+      "aarch64": "target/release/cockatiel_range",
+      "arm": "target/release/cockatiel_range",
+      "x86_64": "target/release/cockatiel_range"
+    },
+    "windows": {
+      "aarch64": "target/release/cockatiel_range.exe",
+      "arm": "target/release/cockatiel_range.exe",
+      "x86_64": "target/release/cockatiel_range.exe"
+    }
+  },
+  "build_command": "cargo",
+  "build_flags": [
+    "build",
+    "--release"
+  ],
+  "capabilities": "preprocess",
+  "command_flags": [
+    "run",
+    "--release"
+  ],
+  "credentials": [
+    {
+      "key": "command_flag",
+      "label": "Command Flag",
+      "list": false,
+      "sensitive": false
+    },
+    {
+      "key": "reconnect_base_secs",
+      "label": "Reconnect base (s)",
+      "list": false,
+      "sensitive": false
+    },
+    {
+      "key": "reconnect_max_secs",
+      "label": "Reconnect max (s)",
+      "list": false,
+      "sensitive": false
+    }
+  ],
+  "description": "a random number in a range — !range <min> <max> (inclusive; swapped if reversed)",
+  "launch_command": "cargo",
+  "min_rank": 0,
+  "name": "range",
+  "price": 0,
+  "release": {
+    "base_url": "https://github.com/vulbyte/cockatiel_module-range-rs/releases/download",
+    "repo": "vulbyte/cockatiel_module-range-rs",
+    "tag": "v0.1.0"
+  },
+  "root_file": "./src/main.rs",
+  "terminal": false,
+  "version": "0.1.0"
+}
